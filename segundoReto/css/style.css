@@ -59,13 +59,11 @@ body{
 }
 .article-sup__figureprincipal img{
     width       : 100%;
-    /* max-width: 6em; */
     padding     : 0;
     margin      : 0;
     height      : auto;
 }
 .article-sup__avatar img{
-    border-radius : 50%;
     vertical-align: middle;
     width         : 40px;
     height        : 40px;
@@ -91,9 +89,11 @@ body{
     grid-template-columns: 0.1fr 1fr; 
     
 }
-.article-sup__share{
-    align-self: flex-end;
+.article-sup__tooltip{
+    align-self  : flex-end;
     justify-self: right;
+    position    : relative;
+    bottom      : 24%;
 }
 .article-sup__principalName{
     font-weight: 700;
@@ -104,27 +104,47 @@ body{
     /* position: absolute; */
    margin-top:  3%;
 }
-.article-sup__tooltip{
-    border-radius : 50%;
-    vertical-align: middle;
-    width         : 40px;
-    height        : 40px;
-    border-radius : 50%;
+.article-sup__tooltip {
+    border-radius   : 50%;
+    vertical-align  : middle;
+    width           : 30px;
+    height          : 30px;
+    background-color: hsl(214, 17%, 51%);
+    color           : #fff;
+    padding         : 8%;
     
 }
 .article-sup__tooltipShare{
-        visibility: hidden;
-        width: 120px;
-        background-color: #555;
-        color: #fff;
-        text-align: center;
-        border-radius: 6px;
-        padding: 5px 0;
-        position: absolute;
-        z-index: 1;
-        bottom: 125%;
-        left: 50%;
-        margin-left: -60px;
-        opacity: 0;
-        transition: opacity 0.3s;
+    visibility      : hidden;
+    width           : 13rem;
+    margin-left     : -90px;
+    background-color: hsl(217, 19%, 35%);
+    color           : #fff;
+    text-align      : center;
+    border-radius   : 6px;
+    padding         : 5px 0;
+    position        : absolute;
+    z-index         : 1;
+    bottom          : 125%;
+    left            : 0%;
+    opacity         : 0;
+    transition      : opacity 0.3s;
+}
+.article-sup__tooltip .article-sup__tooltipShare::after {
+    content     : "";
+    position    : absolute;
+    top         : 100%;
+    left        : 50%;
+    margin-left : -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+  
+.article-sup__tooltip:hover .article-sup__tooltipShare {
+    visibility: visible;
+    opacity   : 1;
+}
+.article-sup__tooltipShare p{
+    margin: 4%;
 }
