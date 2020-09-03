@@ -143,7 +143,7 @@ footer {
         margin      : 0;
         height      : auto;
     }
-
+}
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
 
@@ -208,12 +208,7 @@ footer {
         grid-gap             : 10px;
         grid-template-columns: 0.3fr 1fr; 
         
-    }
-      
- 
-    
- 
-   
+    }   
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 962px) {
@@ -224,10 +219,7 @@ footer {
         grid-template-columns: auto auto ;
         
     }
-    
- 
-    
- 
+
     .article-sup__container{
         background-color: hsl(210, 100%, 100%);
         position: relative;
@@ -260,10 +252,7 @@ footer {
         grid-template-columns: auto auto ;
         
     }
-    
- 
-    
- 
+
     .article-sup__container{
         background-color: hsl(210, 100%, 100%);
         position: relative;
@@ -357,6 +346,7 @@ footer {
     padding       : 1% 0 0 0;
 }
   
-.article-sup__tooltipShare svg{
+.article-sup__tooltipShare svg {
     margin: 2% 3%;
+
 }
