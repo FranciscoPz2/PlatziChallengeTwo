@@ -21,15 +21,43 @@ body{
     height        : 40px;
     border-radius : 50%;
 }
+.article-sup__principalText{
+    font-weight: 700;
+    font-size: 1.42em;
+    padding: 0 0 2% 0;
+}
+.article-sup__secundaryText{
+    font-weight: 500;
+    font-size: .91em;
+    padding: 3% 0 6% 0;
+    
+}
+
 
 /*TODO MEDIAS QUERIES */
 [class*="col-"] {
   width: 100%;
 }
 /* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 375px) {
+    .article-sup{
+        margin               : 22% 8% 19% 10%; 
+        max-width            : 100%;
+        
+    }
+    .article-sup__container{
+        margin          : 0% 8% 0% 20%; 
+        background-color: hsl(210, 100%, 100%);
+        position        : relative;
+        right           : 5em;
+        padding         : 7% 8% 0 8%;
+        width           : 100%;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (min-width: 375px) and (max-width: 600px) {
     .article-sup{
-        margin               : 20% 8% % 10%; 
+        margin               : 20% 8% 0% 10%; 
         max-width            : 100%;
         
     }
@@ -70,17 +98,7 @@ body{
         width: 90%;
     }
       
-    .article-sup__principalText{
-        font-weight: 700;
-        font-size: 1.42em;
-        padding: 0 0 2% 0;
-    }
-    .article-sup__secundaryText{
-        font-weight: 500;
-        font-size: .91em;
-        padding: 3% 0 6% 0;
-        
-    }
+ 
     
  
    
@@ -95,17 +113,7 @@ body{
         grid-gap             : 10px;
     }
     
-    .article-sup__principalText{
-        font-weight: 700;
-        font-size: 1.42em;
-        padding: 0 0 2% 0;
-    }
-    .article-sup__secundaryText{
-        font-weight: 500;
-        font-size: .91em;
-        padding: 3% 0 6% 0;
-        
-    }
+ 
     
  
     .article-sup__container{
@@ -130,17 +138,7 @@ body{
         grid-gap             : 10px;
     }
     
-    .article-sup__principalText{
-        font-weight: 700;
-        font-size: 1.42em;
-        padding: 0 0 2% 0;
-    }
-    .article-sup__secundaryText{
-        font-weight: 500;
-        font-size: .91em;
-        padding: 3% 0 6% 0;
-        
-    }
+ 
     
  
     .article-sup__container{
@@ -154,6 +152,8 @@ body{
 
     
 }
+
+
 .article-sup__athor{
     display              : grid;
     grid-gap             : 10px;
