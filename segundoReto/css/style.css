@@ -54,7 +54,7 @@ body{
 .article-sup__secundaryText{
     font-weight: 500;
     font-size: .91em;
-    padding: 0 0 6% 0;
+    padding: 3% 0 6% 0;
     
 }
 .article-sup__figureprincipal img{
@@ -67,8 +67,8 @@ body{
 .article-sup__avatar img{
     border-radius : 50%;
     vertical-align: middle;
-    width         : 50px;
-    height        : 50px;
+    width         : 40px;
+    height        : 40px;
     border-radius : 50%;
 }
 .article-sup__container{
@@ -82,7 +82,7 @@ body{
 .article-sup__athor{
     display              : grid;
     grid-gap             : 10px;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: 2fr 1fr; 
 }
 .article-sup__authorcontent{
     
@@ -99,4 +99,32 @@ body{
     font-weight: 700;
     font-size: .91em;
 
+}
+.article-sup__authorDescription{
+    /* position: absolute; */
+   margin-top:  3%;
+}
+.article-sup__tooltip{
+    border-radius : 50%;
+    vertical-align: middle;
+    width         : 40px;
+    height        : 40px;
+    border-radius : 50%;
+    
+}
+.article-sup__tooltipShare{
+        visibility: hidden;
+        width: 120px;
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+        bottom: 125%;
+        left: 50%;
+        margin-left: -60px;
+        opacity: 0;
+        transition: opacity 0.3s;
 }
